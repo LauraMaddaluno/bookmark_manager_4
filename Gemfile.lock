@@ -22,6 +22,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.4-x86_64-darwin)
       racc (~> 1.4)
+    pg (1.2.3)
     public_suffix (4.0.6)
     racc (1.5.2)
     rack (2.2.3)
@@ -78,6 +79,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  pg
   rspec
   simplecov
   simplecov-console

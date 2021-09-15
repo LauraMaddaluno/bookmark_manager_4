@@ -1,5 +1,10 @@
+require 'pg'
 class Bookmarks
   def self.all 
-    ["www.google.com", "www.meteo.com", "www.youtube.com"]
+    connection = PG.connect( dbname: 'bookmark_manager' )
+    data_from_table = connection.exec( "SELECT * FROM bookmarks;" )
+    data_from_table.map do |item|
+      item['url']
+    end
   end 
 end
