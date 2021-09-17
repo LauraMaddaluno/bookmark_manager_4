@@ -21,6 +21,13 @@ describe Bookmarks do
       expect(bookmarks.size).to eq(3)
     end 
   end 
+  describe '.create' do 
+    it 'create a new bookmarks' do
+      Bookmarks.create(url: 'https://www.youtube.com/')
+      expect(Bookmarks.all).to include( 'https://www.youtube.com/' )
+    end
+  end
+
 end
 
  
