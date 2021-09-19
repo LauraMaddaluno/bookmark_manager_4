@@ -5,26 +5,27 @@ describe Bookmarks do
   describe '.all' do 
     it 'will return the list of bookmarks' do
       #Connect to the database
-      connection = PG.connect(dbname: 'bookmark_manager_test')
+      #connection = PG.connect(dbname: 'bookmark_manager_test')
       #Insert data
-      connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com/');")
-      connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.google.com/');")
-      connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.destroyallsoftware.com/');")
-
-      #can I get the Data from the database
+      bookmark = Bookmarks.create(url: "http://www.makersacademy.com", title: "Makers Academy")
+      Bookmarks.create(url: "http://www.destroyallsoftware.com", title: "Destroy All Software")
+      Bookmarks.create(url: "http://www.google.com", title: "Google")
+   
       bookmarks = Bookmarks.all
-
-      #is this in the database?
-      expect(bookmarks).to include('http://www.makersacademy.com/')
-      expect(bookmarks).to include('http://www.google.com/')
-      expect(bookmarks).to include('http://www.destroyallsoftware.com/')
-      expect(bookmarks.size).to eq(3)
-    end 
-  end 
+   
+      expect(bookmarks.length).to eq 3
+      expect(bookmarks.first).to be_a Bookmarks
+      expect(bookmarks.first.id).to eq bookmark.id
+      expect(bookmarks.first.title).to eq 'Makers Academy'
+      expect(bookmarks.first.url).to eq 'http://www.makersacademy.com'
+     end
+   end
+  
   describe '.create' do 
     it 'create a new bookmarks' do
-      Bookmarks.create(url: 'https://www.youtube.com/')
-      expect(Bookmarks.all).to include( 'https://www.youtube.com/' )
+      bookmark = Bookmarks.create(url: 'https://www.youtube.com/', title: "YOUTUBE")
+      expect(bookmark.url).to eq 'https://www.youtube.com/'
+      expect(bookmark.title).to eq 'YOUTUBE'
     end
   end
 

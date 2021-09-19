@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/lauramaddaluno/makers/bookmark_manager/spec/bookmarks_spec.rb": {
+      "/Users/lauramaddaluno/Desktop/bookmark_manager_4/spec/bookmarks_spec.rb": {
         "lines": [
           1,
           null,
@@ -10,22 +10,23 @@
           1,
           1,
           null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
           null,
           null,
           1,
           1,
           1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
           null,
+          null,
+          1,
           1,
           1,
           1,
@@ -38,8 +39,9 @@
           null
         ]
       },
-      "/Users/lauramaddaluno/makers/bookmark_manager/spec/features/add_new_bookmark_spec.rb": {
+      "/Users/lauramaddaluno/Desktop/bookmark_manager_4/spec/features/add_new_bookmark_spec.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -50,28 +52,25 @@
           null
         ]
       },
-      "/Users/lauramaddaluno/makers/bookmark_manager/spec/features/bookmarks_spec.rb": {
+      "/Users/lauramaddaluno/Desktop/bookmark_manager_4/spec/features/bookmarks_spec.rb": {
         "lines": [
           1,
           1,
           1,
           null,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
           null,
           null
         ]
       },
-      "/Users/lauramaddaluno/makers/bookmark_manager/spec/features/index_spec.rb": {
+      "/Users/lauramaddaluno/Desktop/bookmark_manager_4/spec/features/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -84,6 +83,6 @@
         ]
       }
     },
-    "timestamp": 1631882387
+    "timestamp": 1632061575
   }
 }
