@@ -33,6 +33,13 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           null,
           null,
@@ -70,6 +77,25 @@
           null
         ]
       },
+      "/Users/lauramaddaluno/Desktop/bookmark_manager_4/spec/features/deleting_a_bookmark_spec.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/lauramaddaluno/Desktop/bookmark_manager_4/spec/features/index_spec.rb": {
         "lines": [
           null,
@@ -83,6 +109,6 @@
         ]
       }
     },
-    "timestamp": 1632065478
+    "timestamp": 1632130177
   }
 }

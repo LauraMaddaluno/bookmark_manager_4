@@ -6,7 +6,11 @@ I want my app to show me a list of bookmarks.
 As a user that wants to save favorite website  
 so that I can refer to them anytime  
 I want to add new bookmark to Bookmark Manager   
- 
+
+As a user 
+so that I can remove my saved bookmark  
+I want to delete a bookmark  
+
 ![Bookmark MVC (1)](https://user-images.githubusercontent.com/55661212/133113390-f81a9c28-be4a-42ae-8c81-f1ff0141d1b8.jpg)
 
 # To set up the databases follow this steps   

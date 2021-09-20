@@ -6,6 +6,7 @@ require 'sinatra/reloader'
 # Describe what the class is doing
 require './lib/bookmarks'
 class Bookmark < Sinatra::Base
+  enable :session, :method_override
   configure :development do
     register Sinatra::Reloader
   end
@@ -26,6 +27,13 @@ class Bookmark < Sinatra::Base
 
   post '/bookmarks' do
     Bookmarks.create(url: params['url'], title: params['title'])
+    redirect '/bookmarks'
+  end
+
+  
+  delete '/bookmarks/:id' do
+    connection = PG.connect(dbname: 'bookmark_manager_test')
+    connection.exec_params("DELETE FROM bookmarks WHERE id = $1", [params[:id]])
     redirect '/bookmarks'
   end
   
