@@ -7,7 +7,7 @@ As a user that wants to save favorite website
 so that I can refer to them anytime  
 I want to add new bookmark to Bookmark Manager   
 
-As a user 
+As a user  
 so that I can remove my saved bookmark  
 I want to delete a bookmark  
 
